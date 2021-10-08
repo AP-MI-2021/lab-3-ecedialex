@@ -79,7 +79,7 @@ def main():
         elif opt == '2':
             print('Cea mai lunga subsecv cu toate numerele pare este:',get_longest_all_even(lst))
         elif opt == '3':
-            print('Cea mai lunga subsecv cu numerele ce au acela?i numar de divizori. :',get_longest_same_div_count(lst))
+            print('Cea mai lunga subsecv cu numerele ce au acelasi numar de divizori. :',get_longest_same_div_count(lst))
         elif opt == '4':
                 print(lst)
         elif opt == 'x':
