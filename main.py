@@ -34,11 +34,11 @@ def get_longest_all_even(lst: List[int]) -> List[int]:
                     result = lst[st:dr+1]
     return result
 
-def test_get_longest_all_even(lst: List[int]) -> List[int]:
+def test_get_longest_all_even():
     assert get_longest_all_even([1, 2, 3, 4, 5]) == [2]
     assert get_longest_all_even([1,2,3,4,6,8,6]) == [4,6,8,6]
     assert get_longest_all_even([1, 3 ,5 ,7]) == []
-    assert get_longest_all_even([1,2,3,4,10,20,30,40,5]) == [10,20,30,40]
+    assert get_longest_all_even([1,2,3,4,10,20,30,40,5]) == [4,10,20,30,40]
 
 def div_count(n):
     """
@@ -75,7 +75,7 @@ def get_longest_same_div_count(lst: List[int]) -> List[int]:
                 if dr - st +1 > len(result):
                     result = lst[st:dr+1]
     return result
-def test_get_longest_same_div_count(lst: List[int]) -> List[int]:
+def test_get_longest_same_div_count():
     assert get_longest_same_div_count([2, 2, 2, 2]) == [2, 2, 2, 2]
     assert get_longest_same_div_count([0]) == [0]
     assert get_longest_same_div_count([1, 4, 9 ,3 ,5 ,7 ,9, 11]) == [3, 5, 7]
@@ -107,7 +107,7 @@ def all_digits_prime(n):
 def test_all_digits_prime():
     assert all_digits_prime(2) == True
     assert all_digits_prime(23575) == True
-    assert all_digits_prime(32) == False
+    assert all_digits_prime(32) == True
     assert all_digits_prime(1) == False
 
 def get_longest_prime_digits(lst: List[int]) -> List[int]:
@@ -153,8 +153,9 @@ def main():
             print('Optiune invalida.')
 
 
-main()
-test_get_longest_all_even()
-test_get_longest_same_div_count()
-test_all_digits_prime()
-test_get_longest_prime_digits()
+if __name__ == '__main__':
+    test_get_longest_all_even()
+    test_get_longest_same_div_count()
+    test_all_digits_prime()
+    test_get_longest_prime_digits()
+    main()
