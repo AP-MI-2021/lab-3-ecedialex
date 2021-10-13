@@ -58,8 +58,8 @@ def div_count(n):
 def get_longest_same_div_count(lst: List[int]) -> List[int]:
     """
     Determina cea mai lunga subsecventa in care toate elementele au aceelasi numar de divizori
-    :param lst:
-    :return:
+    :param lst: lista in care se cauta subsecventa
+    :return: subsecventa gasita
     """
     n=len(lst)
     result=[]
