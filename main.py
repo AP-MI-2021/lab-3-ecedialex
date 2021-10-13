@@ -147,7 +147,7 @@ def main():
             print('Cea mai lunga subsecventa cu numerele ce au același număr de divizori. :',get_longest_same_div_count(lst))
         elif opt == '4':
             print('Cea mai lunga subsecventa cu numerele ce sunt formate din cifre prime. :',get_longest_prime_digits(lst))
-        elif opt == 'x':
+        elif opt == 'x.':
             break
         else:
             print('Optiune invalida.')
